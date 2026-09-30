@@ -1,0 +1,17 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# If you ever add Node tooling (a bundler, a dev server, etc.)
+node_modules/
+npm-debug.log*
+
+# Local env/secrets, if you ever add any (API keys, etc.)
+.env
+.env.local

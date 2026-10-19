@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audio Design — Kyle McCutchen</title>
+<meta name="description" content="Audio design by Kyle McCutchen: the Gravity SFX library and a reactive, spatial audio demo in Unreal Engine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header><div class="wrap nav-row">
+  <a class="brand" href="../index.html">Kyle McCutchen</a>
+  <nav><a href="../index.html">Home</a><a class="active" href="index.html">Game Dev</a><a href="../production.html">Production</a><a href="../front-end.html">Product Design</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap" style="padding-block:56px;">
+  <div class="tagbox">Audio design</div>
+  <h1>Sound that <span class="flip">reacts</span> to the player.</h1>
+  <p class="bio">I'm Lead Audio Designer on Project Gravity, a two-year game production at Cosmic Labs with an 18-person team. Here's the sound library I'm building for it, and a demo of reactive, spatial audio in Unreal Engine.</p>
+</div></section>
+
+<article class="cs-body"><div class="wrap">
+
+  <section class="cs-section">
+    <div>
+      <h2><span class="n">01</span>Gravity SFX library</h2>
+      <ul class="meta-list"><li>Lead Audio Designer</li><li>Team of 18</li><li>Ableton · Output plugins</li></ul>
+    </div>
+    <div class="proj-stack">
+      <p>These are upcoming sound effects for Gravity. Many are still in ideation, and they've helped our team define its mood board and the kinds of sounds and light motifs we want in the game. The gravity "gun" sound is central to the game, so I'm still workshopping it to get it exactly right. Everything was made in Ableton, mostly with built-in synths plus a few Output plugins.</p>
+      <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/qcKdqbx_AfI?rel=0" title="Gravity audio development process" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+      <div class="linkrow"><a href="https://kylemccw.itch.io/gravity-sfx1" target="_blank" rel="noopener">Listen on itch.io</a></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div>
+      <h2><span class="n">02</span>Reactive audio in Unreal</h2>
+      <ul class="meta-list"><li>Unreal Engine</li><li>Blueprints · MetaSounds</li></ul>
+    </div>
+    <div class="proj-stack">
+      <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/-LVERyokLnw?rel=0" title="Reactive and spatial audio demo in Unreal Engine" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+      <p>This demo explores reactive and spatial audio in Unreal Engine. I used animation notifies in the character Blueprint to trigger footsteps at precise moments in the walk cycle, then built a Blueprint system that picks different footstep sounds based on the physical material underfoot.</p>
+      <p>For the environment, I set up sound attenuation so audio behaves realistically in 3D space. Using MetaSounds, I designed a fluorescent light with a subtle electrical hum that fades with the player's distance, and gave the water outside a similar location-based presence instead of playing it globally.</p>
+      <p class="role-line">It ties together animation systems, Blueprint logic, physical materials, attenuation, and MetaSounds into one immersive audio experience.</p>
+    </div>
+  </section>
+
+  <div class="cs-next">
+    <a href="index.html">← Game Development</a>
+    <a href="../front-end.html">Next: Product Design →</a>
+  </div>
+
+</div></article>
+
+<footer id="contact"><div class="wrap">
+  <h2>Let's talk.</h2>
+  <div class="flinks"><a href="mailto:kwm26@duke.edu">kwm26@duke.edu</a><a href="tel:3109277720">310-927-7720</a><a href="https://www.linkedin.com/in/kyle-mccutchen/" target="_blank" rel="noopener">LinkedIn</a></div>
+  <div class="footer-row"><span>Kyle McCutchen — Durham, NC</span><span>Production · Marketing · UX · Game &amp; Audio Design</span></div>
+</div></footer>
+
+</body>
+</html>

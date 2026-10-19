@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Athletic Training Portal: Product Design Case Study — Kyle McCutchen</title>
+<meta name="description" content="Case study: designing and building ATP's landing page, athlete mobile view, and real-time visualization system, which turn ordinary phone video into movement feedback for coaches and athletes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header><div class="wrap nav-row">
+  <a class="brand" href="index.html">Kyle McCutchen</a>
+  <nav><a href="index.html">Home</a><a href="game-dev/index.html">Game Dev</a><a href="production.html">Production</a><a class="active" href="front-end.html">Product Design</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<!-- ============ HERO ============ -->
+<section class="hero"><div class="wrap cs-hero">
+  <div>
+    <div class="tagbox">Case study · Athletic Training Portal</div>
+    <h1>Turning phone video into <span class="flip">feedback</span> athletes can act on.</h1>
+    <p class="bio">ATP measures how athletes move from ordinary phone video: <strong>joint angles</strong>, <strong>range of motion</strong>, and <strong>left-versus-right symmetry</strong>, tracked over time. I designed and built the <a href="https://www.atp-data.com/" target="_blank" rel="noopener"><strong>landing page</strong></a>, the athlete mobile view, and a real-time visualization system that draws movement data directly onto video.</p>
+  </div>
+  <figure class="shot" style="border-color:rgba(242,241,236,0.5);">
+    <img src="assets/img/atp-mobile-athlete.webp" alt="ATP athlete view on a phone: mobility score, digital twin with ankle dorsiflexion reading, and body map" width="375" height="812">
+  </figure>
+</div></section>
+
+<!-- ============ PROJECT FACTS ============ -->
+<section class="cs-facts"><div class="wrap">
+  <dl class="facts">
+    <div><dt>Role</dt><dd>Chief Experience Officer &amp; Lead Front-End Developer</dd></div>
+    <div><dt>Timeline</dt><dd>September 2025 – Present</dd></div>
+    <div><dt>What I built</dt><dd>Landing page, athlete mobile view, real-time visualization system</dd></div>
+    <div><dt>Tools</dt><dd>Python, OpenCV, PIL, NumPy · <span class="todo">TODO: design tool + front-end stack</span></dd></div>
+  </dl>
+</div></section>
+
+<!-- ============ CASE STUDY BODY ============ -->
+<article class="cs-body"><div class="wrap">
+
+  <section class="cs-section">
+    <h2><span class="n">01</span>The problem</h2>
+    <div class="cs-text">
+      <p>Measuring how an athlete moves usually takes specialized equipment. ATP does it from video shot on an ordinary phone, which makes the analysis far more accessible but puts all the pressure on the interface. The raw output is dense: angles at every tracked joint, range of motion, left-versus-right comparisons, all changing frame by frame and session over session.</p>
+      <p>And it has to work for different people. Coaches need a team-wide read on who needs attention. Athletes need feedback on their own movement that they can actually act on. Clinicians need to see a joint drifting toward injury, and then track its way back during rehab.</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2><span class="n">02</span>My role</h2>
+    <div class="cs-text">
+      <p>As Chief Experience Officer, I coordinated and developed ATP's landing page and athlete mobile view, and I lead our marketing strategy team. I also built the real-time visualization system that renders performance metrics and biomechanical data directly onto live training video.</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2><span class="n">03</span>From video to skeleton</h2>
+    <div class="proj-stack">
+      <figure class="shot">
+        <video poster="assets/img/atp-pose-tracking-poster.webp" autoplay muted loop playsinline width="690" height="200"><source src="assets/video/atp-pose-tracking.webm" type="video/webm"><source src="assets/video/atp-pose-tracking.mp4" type="video/mp4"></video>
+        <figcaption>Left: raw phone video · Right: tracked landmarks on the same clip</figcaption>
+      </figure>
+      <p>The first thing the product has to earn is trust. Showing the original clip next to the tracked skeleton lets anyone check the system's read of the movement with their own eyes before they look at a single number.</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2><span class="n">04</span>Key design decisions</h2>
+    <div class="decisions">
+      <div class="decision">
+        <h3>Triage first for coaches</h3>
+        <p>The coach view leads with a short "Needs attention" list: each athlete, the specific issue (like knee asymmetry 18%), and a readiness score, color-coded by severity.</p>
+        <p class="todo">TODO: why you led with triage instead of a full roster, and what you learned from coaches.</p>
+      </div>
+      <div class="decision">
+        <h3>Numbers in context, in plain language</h3>
+        <p>Trends are drawn against a shaded healthy range, with a one-line "What it means" explanation and a concrete next step, like re-capturing within a week.</p>
+        <p class="todo">TODO: why plain-language explanations mattered for your users.</p>
+      </div>
+      <div class="decision">
+        <h3>One screen per athlete</h3>
+        <p>On a phone, the athlete sees a single mobility score, a tappable digital twin of their body, and four entry points: body map, progress, flags, and captures.</p>
+        <p class="todo">TODO: what you tried before this layout, or what changed after testing it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2><span class="n">05</span>Screens</h2>
+    <div class="proj-stack">
+      <div class="gallery">
+        <figure class="shot wide"><img src="assets/img/atp-coach-dashboard.webp" alt="Coach view: athletes tracked, average readiness, ROM coverage, squad movement profile, and needs-attention list" loading="lazy" width="788" height="500"><figcaption>Coach view · team triage</figcaption></figure>
+        <figure class="shot"><img src="assets/img/atp-athlete-view.webp" alt="Athlete view on desktop: mobility score trend and digital twin" loading="lazy" width="788" height="500"><figcaption>Athlete view · desktop</figcaption></figure>
+        <figure class="shot"><img src="assets/img/atp-rehab-trend.webp" alt="Prevention and rehab: declining ankle dorsiflexion trend against a shaded healthy range" loading="lazy" width="788" height="500"><figcaption>Prevention &amp; rehab trend</figcaption></figure>
+        <figure class="shot"><img src="assets/img/atp-hero.webp" alt="ATP landing page hero: Reduce injuries. Improve performance. Recover faster." loading="lazy" width="788" height="500"><figcaption>Landing page · hero</figcaption></figure>
+        <figure class="shot"><img src="assets/img/atp-how-it-works.webp" alt="How it works: coordinate, record, analyze" loading="lazy" width="788" height="500"><figcaption>Landing page · how it works</figcaption></figure>
+      </div>
+      <div class="phones">
+        <figure class="shot"><img src="assets/img/atp-mobile-hero.webp" alt="ATP landing page on a phone" loading="lazy" width="375" height="812"><figcaption>Mobile · landing</figcaption></figure>
+        <figure class="shot"><img src="assets/img/atp-mobile-athlete.webp" alt="ATP athlete view on a phone" loading="lazy" width="375" height="812"><figcaption>Mobile · athlete view</figcaption></figure>
+      </div>
+      <p class="cs-note" style="grid-column:auto;">Screens from <a href="https://www.atp-data.com/" target="_blank" rel="noopener">atp-data.com</a>.</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2><span class="n">06</span>Real-time visualization system</h2>
+    <div class="proj-stack">
+      <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/bFRhpB_Oo4Q?rel=0" title="Real-time athlete monitoring visualization system" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+      <p>I built a modular visualization system for real-time athlete monitoring during training, using Python, OpenCV, and PIL. It renders performance metrics and biomechanical data directly onto live video. A widget-based rendering engine keeps each UI component separate and scalable, NumPy broadcasting handles gradient rendering, and exponential moving-average smoothing keeps the numbers from jittering.</p>
+      <p class="role-line"><strong>From 7 FPS to 60+ FPS.</strong> Frame rate was the biggest hurdle. I used AI-assisted ideation to find optimization strategies and took rendering from the 7 FPS I started with to over 60 FPS.</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2><span class="n">07</span>Outcomes</h2>
+    <div class="cs-text">
+      <p>I helped our team secure a <strong>$50K grant</strong> and <strong>four pilot programs with NCAA Division I teams</strong>, including partnerships with Duke University and North Carolina Central University.</p>
+      <p>When the team needed to run agile sprints without budget for paid software, I built us our own Jira-style tracker, so design, engineering, and research could ship on the same cadence.</p>
+      <p class="todo">TODO: any user-facing result: feedback from pilot users, a usability finding, a metric that moved.</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2><span class="n">08</span>What I'd do next</h2>
+    <div class="cs-text">
+      <p class="todo">TODO: one or two things you'd improve or test next, and why. Hiring teams read this as evidence of how you think.</p>
+    </div>
+  </section>
+
+  <div class="cs-next">
+    <a href="index.html#work">← All work</a>
+    <a href="game-dev/index.html">Next: Game Development →</a>
+  </div>
+
+</div></article>
+
+<footer id="contact"><div class="wrap">
+  <h2>Let's talk.</h2>
+  <div class="flinks"><a href="mailto:kwm26@duke.edu">kwm26@duke.edu</a><a href="tel:3109277720">310-927-7720</a><a href="https://www.linkedin.com/in/kyle-mccutchen/" target="_blank" rel="noopener">LinkedIn</a></div>
+  <div class="footer-row"><span>Kyle McCutchen — Durham, NC</span><span>Production · Marketing · UX · Game &amp; Audio Design</span></div>
+</div></footer>
+
+</body>
+</html>

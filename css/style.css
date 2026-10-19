@@ -58,8 +58,9 @@ nav a.active{background:var(--ink);color:var(--paper);}
 .item p{font-size:13px;margin:0;color:var(--ink-soft);}
 .item:nth-child(odd){background:var(--paper);}
 .item:nth-child(even){background:#E7E5DD;}
-.item:nth-child(3){background:var(--accent);}
-.item:nth-child(3) h3, .item:nth-child(3) p, .item:nth-child(3) .n{color:var(--accent-ink);}
+/* The blue tile follows the mouse (js/site.js) and stays on the last one hovered */
+.item.is-active{background:var(--accent);}
+.item.is-active h3, .item.is-active p, .item.is-active .n{color:var(--accent-ink);}
 @media (max-width:900px){.grid5{grid-template-columns:1fr 1fr;} .item{border-right:3px solid var(--ink);}}
 @media (max-width:560px){.grid5{grid-template-columns:1fr;} .item{border-right:none;border-bottom:3px solid var(--ink);} .item:last-child{border-bottom:none;}}
 
@@ -86,7 +87,8 @@ footer h2{font-size:30px;margin-bottom:20px;text-transform:uppercase;}
 nav a:hover{color:var(--ink);border-color:var(--accent);}
 nav a.active:hover{color:var(--paper);}
 .actions a:hover, .flinks a:hover{filter:brightness(1.08);}
-a.item{color:inherit;transition:background .15s ease;}
+a.item{color:inherit;transition:background .18s ease;}
+a.item h3, a.item p, a.item .n{transition:color .18s ease;}
 a.item:hover h3{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px;}
 
 /* =========================================================

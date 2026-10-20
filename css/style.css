@@ -4,7 +4,7 @@
    ========================================================= */
 :root{
   --paper:#F2F1EC; --ink:#131313; --ink-soft:#4B4B47; --line:#131313;
-  --accent:#2FB6FF; --accent-ink:#0A1A22;
+  --accent:rgba(3, 6, 143, 0.919); --accent-ink:#0A1A22;
 }
 *{box-sizing:border-box;}
 a{color:inherit;text-decoration:none;}

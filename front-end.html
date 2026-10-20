@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kyle McCutchen">
 <meta property="og:title" content="Athletic Training Portal: Product Design Case Study — Kyle McCutchen">
-<meta property="og:description" content="Case study: designing and building ATP&#x27;s landing page, athlete mobile view, and real-time visualization system, which turn ordinary phone video into movement feedback for coaches and athletes.">
+<meta property="og:description" content="Case study: designing and building ATP's landing page, athlete mobile view, and real-time visualization system, which turn ordinary phone video into movement feedback for coaches and athletes.">
 <meta property="og:url" content="https://kwm26.github.io/Portfolio-Website/front-end.html">
 <meta property="og:image" content="https://kwm26.github.io/Portfolio-Website/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
@@ -33,8 +33,8 @@
 <section class="hero"><div class="wrap cs-hero">
   <div>
     <div class="tagbox">Case study · Athletic Training Portal</div>
-    <h1>Turning phone video into <span class="flip">feedback</span> athletes can act on.</h1>
-    <p class="bio">ATP measures how athletes move from ordinary phone video: <strong>joint angles</strong>, <strong>range of motion</strong>, and <strong>left-versus-right symmetry</strong>, tracked over time. I designed and built the <a href="https://www.atp-data.com/" target="_blank" rel="noopener"><strong>landing page</strong></a>, the athlete mobile view, and a real-time visualization system that draws movement data directly onto video.</p>
+    <h1>Making movement data <span class="flip">useful</span> for coaches and athletes.</h1>
+    <p class="bio">ATP measures how athletes move using regular phone video. It tracks <strong>joint angles</strong>, <strong>range of motion</strong>, and how the <strong>left and right sides compare</strong> over time. I designed and built our <a href="https://www.atp-data.com/" target="_blank" rel="noopener"><strong>landing page</strong></a>, the athlete mobile view, and a system that draws that movement data right onto the video.</p>
   </div>
   <figure class="shot" style="border-color:rgba(242,241,236,0.5);">
     <img src="assets/img/atp-mobile-athlete.webp" alt="ATP athlete view on a phone: mobility score, digital twin with ankle dorsiflexion reading, and body map" width="375" height="812">
@@ -57,46 +57,46 @@
   <section class="cs-section">
     <h2><span class="n">01</span>The problem</h2>
     <div class="cs-text">
-      <p>Measuring how an athlete moves usually takes specialized equipment. ATP does it from video shot on an ordinary phone, which makes the analysis far more accessible but puts all the pressure on the interface. The raw output is dense: angles at every tracked joint, range of motion, left-versus-right comparisons, all changing frame by frame and session over session.</p>
-      <p>And it has to work for different people. Coaches need a team-wide read on who needs attention. Athletes need feedback on their own movement that they can actually act on. Clinicians need to see a joint drifting toward injury, and then track its way back during rehab.</p>
+      <p>Measuring how someone moves usually takes expensive, specialized equipment. ATP does it with a phone, which makes it a lot more accessible, but it means the interface has to do a lot of the work. There's a ton of data: angles at every joint, range of motion, and left vs. right comparisons, all changing frame to frame and session to session.</p>
+      <p>It also has to make sense to very different people. Coaches want to know who on the team needs attention. Athletes want feedback they can actually do something with. Trainers and clinicians want to catch a joint heading toward injury and then follow it through rehab.</p>
     </div>
   </section>
 
   <section class="cs-section">
     <h2><span class="n">02</span>My role</h2>
     <div class="cs-text">
-      <p>As Chief Experience Officer, I coordinated and developed ATP's landing page and athlete mobile view, and I lead our marketing strategy team. I also built the real-time visualization system that renders performance metrics and biomechanical data directly onto live training video.</p>
+      <p>As Chief Experience Officer, I coordinated and developed ATP's landing page and athlete mobile view, and I lead our marketing strategy team. I also built the system that draws performance and biomechanics data onto live training video.</p>
     </div>
   </section>
 
   <section class="cs-section">
-    <h2><span class="n">03</span>From video to skeleton</h2>
+    <h2><span class="n">03</span>Video to skeleton</h2>
     <div class="proj-stack">
       <figure class="shot">
         <video poster="assets/img/atp-pose-tracking-poster.webp?v=2" autoplay muted loop playsinline width="1400" height="394"><source src="assets/video/atp-pose-tracking.webm?v=2" type="video/webm"><source src="assets/video/atp-pose-tracking.mp4?v=2" type="video/mp4"></video>
         <figcaption>Left: raw phone video · Right: tracked landmarks on the same clip</figcaption>
       </figure>
-      <p>The first thing the product has to earn is trust. Showing the original clip next to the tracked skeleton lets anyone check the system's read of the movement with their own eyes before they look at a single number.</p>
+      <p>We wanted people to trust what they were seeing. Putting the original clip right next to the tracked skeleton lets coaches and athletes check the tracking with their own eyes before they look at any numbers.</p>
     </div>
   </section>
 
   <section class="cs-section">
-    <h2><span class="n">04</span>Key design decisions</h2>
+    <h2><span class="n">04</span>Design decisions</h2>
     <div class="decisions">
       <div class="decision">
-        <h3>Triage first for coaches</h3>
-        <p>The coach view leads with a short "Needs attention" list: each athlete, the specific issue (like knee asymmetry 18%), and a readiness score, color-coded by severity.</p>
-        <p>A coach responsible for a whole roster doesn't have time to open every athlete. Leading with who needs attention, and exactly why, is how the product helps catch risk early and turn data into a training decision.</p>
+        <h3>Coaches see who needs attention first</h3>
+        <p>The coach view opens with a short "Needs attention" list showing each athlete, what the issue is (like 18% knee asymmetry), and a readiness score, color-coded by how serious it is.</p>
+        <p>Coaches are responsible for a whole roster and don't have time to click into every athlete. Showing who needs a look, and why, helps them catch problems early.</p>
       </div>
       <div class="decision">
-        <h3>Numbers in context, in plain language</h3>
-        <p>Trends are drawn against a shaded healthy range, with a one-line "What it means" explanation and a concrete next step, like re-capturing within a week.</p>
-        <p>Most coaches and athletes aren't biomechanists. A joint angle means little on its own, so showing it against a healthy range, explaining it in plain language, and pairing it with a next step turns a number into an action.</p>
+        <h3>Explaining the numbers</h3>
+        <p>Trends are shown against a shaded healthy range, with a short "What it means" note and a next step, like re-recording within a week.</p>
+        <p>Most coaches and athletes aren't biomechanists, and a joint angle on its own doesn't mean much. Putting it next to a healthy range and explaining it in plain language gives them something they can act on.</p>
       </div>
       <div class="decision">
-        <h3>One screen per athlete</h3>
-        <p>On a phone, the athlete sees a single mobility score, a tappable digital twin of their body, and four entry points: body map, progress, flags, and captures.</p>
-        <p>Athletes check this on their phones, usually on the move. One score, one body they can tap, and four clear entry points keep the most important information a glance away.</p>
+        <h3>Keeping the athlete view simple</h3>
+        <p>On a phone, athletes get one mobility score, a digital twin of their body they can tap on, and four places to go: body map, progress, flags, and captures.</p>
+        <p>Athletes are usually checking this on their phone between other things, so I wanted the important stuff to be a quick glance away.</p>
       </div>
     </div>
   </section>
@@ -120,19 +120,19 @@
   </section>
 
   <section class="cs-section">
-    <h2><span class="n">06</span>Real-time visualization system</h2>
+    <h2><span class="n">06</span>Real-time visualization</h2>
     <div class="proj-stack">
       <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/bFRhpB_Oo4Q?rel=0" title="Real-time athlete monitoring visualization system" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
-      <p>I built a modular visualization system for real-time athlete monitoring during training, using Python, OpenCV, and PIL. It renders performance metrics and biomechanical data directly onto live video. A widget-based rendering engine keeps each UI component separate and scalable, NumPy broadcasting handles gradient rendering, and exponential moving-average smoothing keeps the numbers from jittering.</p>
-      <p class="role-line"><strong>From 7 FPS to 60+ FPS.</strong> Frame rate was the biggest hurdle. I used AI-assisted ideation to find optimization strategies and took rendering from the 7 FPS I started with to over 60 FPS.</p>
+      <p>I built a modular system in Python, using OpenCV and PIL, that draws performance and biomechanics data onto live training video. Each piece of the UI is its own widget, so it's easy to add or change things. I used NumPy broadcasting for the gradients and exponential moving-average smoothing so the numbers don't jitter.</p>
+      <p class="role-line"><strong>7 FPS to 60+ FPS.</strong> Frame rate was the biggest problem. When I started, it was running at 7 FPS. I used AI to brainstorm ways to optimize it and got it running at over 60 FPS.</p>
     </div>
   </section>
 
   <section class="cs-section">
-    <h2><span class="n">07</span>Outcomes</h2>
+    <h2><span class="n">07</span>Results</h2>
     <div class="cs-text">
-      <p>I helped our team secure a <strong>$50K grant</strong> and <strong>four pilot programs with NCAA Division I teams</strong>, including partnerships with Duke University and North Carolina Central University.</p>
-      <p>When the team needed to run agile sprints without budget for paid software, I built us our own Jira-style tracker, so design, engineering, and research could ship on the same cadence.</p>
+      <p>I helped our team land a <strong>$50K grant</strong> and <strong>four pilot programs with NCAA Division I teams</strong>, including Duke and North Carolina Central University.</p>
+      <p>When we needed to run agile sprints without paying for software, I built our own Jira-style tracker so design, engineering, and research could all work on the same schedule. There's more on that on my <a href="production.html"><strong>production page</strong></a>.</p>
     </div>
   </section>
 
@@ -145,7 +145,7 @@
 </div></article>
 
 <footer id="contact"><div class="wrap">
-  <h2>Let's talk.</h2>
+  <h2>Get in touch</h2>
   <div class="flinks"><a href="mailto:kwm26@duke.edu">kwm26@duke.edu</a><a href="tel:3109277720">310-927-7720</a><a href="https://www.linkedin.com/in/kyle-mccutchen/" target="_blank" rel="noopener">LinkedIn</a></div>
   <div class="footer-row"><span>Kyle McCutchen — Durham, NC</span><span>Production · Marketing · UX · Game &amp; Audio Design</span></div>
 </div></footer>

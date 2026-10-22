@@ -1,6 +1,6 @@
 # Kyle McCutchen — Portfolio Website
 
-Live site: https://kwm26.github.io/Portfolio-Website/
+Live site: https://kwm26.github.io/portfolio/
 
 Personal portfolio covering production and project management, product
 design (Athletic Training Portal), game development, and audio design.

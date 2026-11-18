@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Geist:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=10">
+<link rel="stylesheet" href="css/style.css?v=11">
 </head>
 <body>
 
@@ -28,14 +28,16 @@
   <a class="brand" href="index.html">Kyle McCutchen</a>
   <nav><a class="active" href="index.html#work">Work</a><a href="about.html">About</a><a href="https://www.linkedin.com/in/kyle-mccutchen/" target="_blank" rel="noopener">LinkedIn</a><a href="assets/Kyle_McCutchen_Resume.pdf" target="_blank" rel="noopener">Resume</a></nav>
 </div></header>
+<div class="progress" aria-hidden="true"><span></span></div>
 
-<section class="hero"><div class="wrap" style="padding-block:56px;">
-  <div class="tagbox">Production · Project management · Marketing</div>
+<section class="cs-top"><div class="wrap">
+  <span class="tagbox">Production · Project management · Marketing</span>
   <h1>Keeping teams <span class="flip">organized</span> and moving.</h1>
   <p class="bio">I lead marketing and build our internal tools at Athletic Training Portal, a sports-tech startup, and I run sprints for an 18-person team at Cosmic Labs. When we need a tool we can't afford, I usually try to build it myself with AI.</p>
+  <div class="cs-cover stage"><div class="screen"><img src="assets/img/atp-board.webp" alt="ATP Board sprint view"></div></div>
 </div></section>
 
-<article class="cs-body"><div class="wrap">
+<article class="cs-body"><div class="wrap cs-layout"><aside class="toc" aria-label="On this page"></aside><div class="cs-main">
 
   <section class="cs-section">
     <div>
@@ -109,12 +111,10 @@
     </div>
   </section>
 
-  <div class="cs-next">
-    <a href="index.html#work">← All work</a>
-    <a href="front-end.html">Next: Product Design →</a>
-  </div>
+  <a class="next-card" href="front-end.html"><span class="label">Next project</span><span class="next-title">Product Design (ATP)</span><span class="card-arrow" aria-hidden="true">&rarr;</span></a>
+  <a class="back-link" href="index.html#work">&larr; All work</a>
 
-</div></article>
+</div></div></article>
 
 <footer class="site-footer" id="contact"><div class="wrap">
   <p class="cta">Let's build <em>something</em> together.</p>
@@ -127,6 +127,6 @@
   <div class="foot-base"><span>Crafted with care in Durham, NC.</span><span>&copy; 2026 Kyle McCutchen</span></div>
 </div></footer>
 
-<script src="js/site.js?v=5"></script>
+<script src="js/site.js?v=6"></script>
 </body>
 </html>

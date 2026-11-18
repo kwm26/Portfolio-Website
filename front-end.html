@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Geist:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=10">
+<link rel="stylesheet" href="css/style.css?v=11">
 </head>
 <body>
 
@@ -28,17 +28,14 @@
   <a class="brand" href="index.html">Kyle McCutchen</a>
   <nav><a class="active" href="index.html#work">Work</a><a href="about.html">About</a><a href="https://www.linkedin.com/in/kyle-mccutchen/" target="_blank" rel="noopener">LinkedIn</a><a href="assets/Kyle_McCutchen_Resume.pdf" target="_blank" rel="noopener">Resume</a></nav>
 </div></header>
+<div class="progress" aria-hidden="true"><span></span></div>
 
 <!-- ============ HERO ============ -->
-<section class="hero"><div class="wrap cs-hero">
-  <div>
-    <div class="tagbox">Case study · Athletic Training Portal</div>
-    <h1>Making movement data <span class="flip">useful</span> for coaches and athletes.</h1>
-    <p class="bio">ATP measures how athletes move using regular phone video. It tracks <strong>joint angles</strong>, <strong>range of motion</strong>, and how the <strong>left and right sides compare</strong> over time. I designed and built our <a href="https://www.atp-data.com/" target="_blank" rel="noopener"><strong>landing page</strong></a>, the athlete mobile view, and a system that draws that movement data right onto the video.</p>
-  </div>
-  <figure class="shot" style="border-color:rgba(242,241,236,0.5);">
-    <img src="assets/img/atp-mobile-athlete.webp" alt="ATP athlete view on a phone: mobility score, digital twin with ankle dorsiflexion reading, and body map" width="375" height="812">
-  </figure>
+<section class="cs-top"><div class="wrap">
+  <span class="tagbox">Case study · Athletic Training Portal</span>
+  <h1>Making movement data <span class="flip">useful</span> for coaches and athletes.</h1>
+  <p class="bio">ATP measures how athletes move using regular phone video. It tracks <strong>joint angles</strong>, <strong>range of motion</strong>, and how the <strong>left and right sides compare</strong> over time. I designed and built our <a href="https://www.atp-data.com/" target="_blank" rel="noopener"><strong>landing page</strong></a>, the athlete mobile view, and a system that draws that movement data right onto the video.</p>
+  <div class="cs-cover stage"><div class="screen desk"><img src="assets/img/atp-coach-dashboard.webp" alt="ATP coach dashboard"></div><div class="phone"><img src="assets/img/atp-mobile-athlete.webp" alt="ATP athlete view on a phone"></div></div>
 </div></section>
 
 <!-- ============ PROJECT FACTS ============ -->
@@ -52,7 +49,7 @@
 </div></section>
 
 <!-- ============ CASE STUDY BODY ============ -->
-<article class="cs-body"><div class="wrap">
+<article class="cs-body"><div class="wrap cs-layout"><aside class="toc" aria-label="On this page"></aside><div class="cs-main">
 
   <section class="cs-section">
     <h2><span class="n">01</span>The problem</h2>
@@ -137,12 +134,10 @@
   </section>
 
 
-  <div class="cs-next">
-    <a href="index.html#work">← All work</a>
-    <a href="game-dev/index.html">Next: Game Development →</a>
-  </div>
+  <a class="next-card" href="game-dev/index.html"><span class="label">Next project</span><span class="next-title">Game Development</span><span class="card-arrow" aria-hidden="true">&rarr;</span></a>
+  <a class="back-link" href="index.html#work">&larr; All work</a>
 
-</div></article>
+</div></div></article>
 
 <footer class="site-footer" id="contact"><div class="wrap">
   <p class="cta">Let's build <em>something</em> together.</p>
@@ -155,6 +150,6 @@
   <div class="foot-base"><span>Crafted with care in Durham, NC.</span><span>&copy; 2026 Kyle McCutchen</span></div>
 </div></footer>
 
-<script src="js/site.js?v=5"></script>
+<script src="js/site.js?v=6"></script>
 </body>
 </html>

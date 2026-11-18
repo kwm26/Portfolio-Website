@@ -32,9 +32,9 @@
 
 <!-- ============ HERO ============ -->
 <section class="cs-top"><div class="wrap">
-  <span class="tagbox">Case study · Athletic Training Portal</span>
+  <span class="tagbox">Product Design · Athletic Training Portal</span>
   <h1>Making movement data <span class="flip">useful</span> for coaches and athletes.</h1>
-  <p class="bio">ATP measures how athletes move using regular phone video. It tracks <strong>joint angles</strong>, <strong>range of motion</strong>, and how the <strong>left and right sides compare</strong> over time. I designed and built our <a href="https://www.atp-data.com/" target="_blank" rel="noopener"><strong>landing page</strong></a>, the athlete mobile view, and a system that draws that movement data right onto the video.</p>
+  <p class="bio">ATP turns regular phone video into movement data. I designed and built our <a href="https://www.atp-data.com/" target="_blank" rel="noopener"><strong>landing page</strong></a>, the athlete mobile view, and the overlays that draw that data onto video.</p>
   <div class="cs-cover stage"><div class="screen desk"><img src="assets/img/atp-coach-dashboard.webp" alt="ATP coach dashboard"></div><div class="phone"><img src="assets/img/atp-mobile-athlete.webp" alt="ATP athlete view on a phone"></div></div>
 </div></section>
 
@@ -50,56 +50,29 @@
 
 <!-- ============ CASE STUDY BODY ============ -->
 <article class="cs-body"><div class="wrap cs-layout"><aside class="toc" aria-label="On this page"></aside><div class="cs-main">
-
   <section class="cs-section">
-    <h2><span class="n">01</span>The problem</h2>
-    <div class="cs-text">
-      <p>Measuring how someone moves usually takes expensive, specialized equipment. ATP does it with a phone, which makes it a lot more accessible, but it means the interface has to do a lot of the work. There's a ton of data: angles at every joint, range of motion, and left vs. right comparisons, all changing frame to frame and session to session.</p>
-      <p>It also has to make sense to very different people. Coaches want to know who on the team needs attention. Athletes want feedback they can actually do something with. Trainers and clinicians want to catch a joint heading toward injury and then follow it through rehab.</p>
-    </div>
-  </section>
-
-  <section class="cs-section">
-    <h2><span class="n">02</span>My role</h2>
-    <div class="cs-text">
-      <p>As Chief Experience Officer, I coordinated and developed ATP's landing page and athlete mobile view, and I lead our marketing strategy team. I also built the system that draws performance and biomechanics data onto live training video.</p>
-    </div>
-  </section>
-
-  <section class="cs-section">
-    <h2><span class="n">03</span>Video to skeleton</h2>
+    <div><h2>The problem</h2></div>
     <div class="proj-stack">
-      <figure class="shot">
-        <video poster="assets/img/atp-pose-tracking-poster.webp?v=2" autoplay muted loop playsinline width="1400" height="394"><source src="assets/video/atp-pose-tracking.webm?v=2" type="video/webm"><source src="assets/video/atp-pose-tracking.mp4?v=2" type="video/mp4"></video>
-        <figcaption>Left: raw phone video · Right: tracked landmarks on the same clip</figcaption>
-      </figure>
-      <p>We wanted people to trust what they were seeing. Putting the original clip right next to the tracked skeleton lets coaches and athletes check the tracking with their own eyes before they look at any numbers.</p>
+      <p>One set of data, very different users. Young athletes want something engaging on their phone. Coaches need the full picture but don't always love technology.</p>
     </div>
   </section>
 
   <section class="cs-section">
-    <h2><span class="n">04</span>Design decisions</h2>
-    <div class="decisions">
-      <div class="decision">
-        <h3>Coaches see who needs attention first</h3>
-        <p>The coach view opens with a short "Needs attention" list showing each athlete, what the issue is (like 18% knee asymmetry), and a readiness score, color-coded by how serious it is.</p>
-        <p>Coaches are responsible for a whole roster and don't have time to click into every athlete. Showing who needs a look, and why, helps them catch problems early.</p>
-      </div>
-      <div class="decision">
-        <h3>Explaining the numbers</h3>
-        <p>Trends are shown against a shaded healthy range, with a short "What it means" note and a next step, like re-recording within a week.</p>
-        <p>Most coaches and athletes aren't biomechanists, and a joint angle on its own doesn't mean much. Putting it next to a healthy range and explaining it in plain language gives them something they can act on.</p>
-      </div>
-      <div class="decision">
-        <h3>Keeping the athlete view simple</h3>
-        <p>On a phone, athletes get one mobility score, a digital twin of their body they can tap on, and four places to go: body map, progress, flags, and captures.</p>
-        <p>Athletes are usually checking this on their phone between other things, so I wanted the important stuff to be a quick glance away.</p>
-      </div>
+    <div><h2>Video to skeleton</h2></div>
+    <div class="proj-stack">
+      <figure class="shot"><video poster="assets/img/atp-pose-tracking-poster.webp?v=2" autoplay muted loop playsinline width="1400" height="394"><source src="assets/video/atp-pose-tracking.webm?v=2" type="video/webm"><source src="assets/video/atp-pose-tracking.mp4?v=2" type="video/mp4"></video></figure><p>Raw video next to the tracked skeleton, so people can see the tracking is right before they trust the numbers.</p>
     </div>
   </section>
 
   <section class="cs-section">
-    <h2><span class="n">05</span>Screens</h2>
+    <div><h2>Design decisions</h2></div>
+    <div class="proj-stack">
+      <div class="decisions"><div class="decision"><h3>Coaches see who needs attention first</h3></div><div class="decision"><h3>Every number sits against a healthy range, in plain language</h3></div><div class="decision"><h3>Athletes get one score and a body they can tap</h3></div></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div><h2>Screens</h2></div>
     <div class="proj-stack">
       <div class="gallery">
         <figure class="shot wide"><img src="assets/img/atp-coach-dashboard.webp" alt="Coach view: athletes tracked, average readiness, ROM coverage, squad movement profile, and needs-attention list" loading="lazy" width="788" height="500"><figcaption>Coach view · team triage</figcaption></figure>
@@ -112,26 +85,23 @@
         <figure class="shot"><img src="assets/img/atp-mobile-hero.webp" alt="ATP landing page on a phone" loading="lazy" width="375" height="812"><figcaption>Mobile · landing</figcaption></figure>
         <figure class="shot"><img src="assets/img/atp-mobile-athlete.webp" alt="ATP athlete view on a phone" loading="lazy" width="375" height="812"><figcaption>Mobile · athlete view</figcaption></figure>
       </div>
-      <p class="cs-note" style="grid-column:auto;">Screens from <a href="https://www.atp-data.com/" target="_blank" rel="noopener">atp-data.com</a>.</p>
     </div>
   </section>
 
   <section class="cs-section" id="realtime">
-    <h2><span class="n">06</span>Real-time visualization</h2>
+    <div><h2>Real-time overlays</h2></div>
     <div class="proj-stack">
-      <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/bFRhpB_Oo4Q?rel=0" title="Real-time athlete monitoring visualization system" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
-      <p>I built a modular system in Python, using OpenCV and PIL, that draws performance and biomechanics data onto live training video. Each piece of the UI is its own widget, so it's easy to add or change things. I used NumPy broadcasting for the gradients and exponential moving-average smoothing so the numbers don't jitter.</p>
-      <p class="role-line"><strong>7 FPS to 60+ FPS.</strong> Frame rate was the biggest problem. When I started, it was running at 7 FPS. I used AI to brainstorm ways to optimize it and got it running at over 60 FPS.</p>
+      <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/bFRhpB_Oo4Q?rel=0" title="Real-time athlete monitoring visualization system" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div><p>I built the overlay system in Python with OpenCV. It started at 7 FPS. I got it past 60.</p>
     </div>
   </section>
 
   <section class="cs-section">
-    <h2><span class="n">07</span>Results</h2>
-    <div class="cs-text">
-      <p>I helped our team land a <strong>$50K grant</strong> and <strong>four pilot programs with NCAA Division I teams</strong>, including Duke and North Carolina Central University.</p>
-      <p>When we needed to run agile sprints without paying for software, I built our own Jira-style tracker so design, engineering, and research could all work on the same schedule. There's more on that on my <a href="production.html"><strong>production page</strong></a>.</p>
+    <div><h2>Results</h2></div>
+    <div class="proj-stack">
+      <p><strong>$50K grant</strong> and NCAA Division I pilots at Duke and North Carolina Central University.</p>
     </div>
   </section>
+
 
 
   <a class="next-card" href="game-dev/index.html"><span class="label">Next project</span><span class="next-title">Game Development</span><span class="card-arrow" aria-hidden="true">&rarr;</span></a>
@@ -140,14 +110,14 @@
 </div></div></article>
 
 <footer class="site-footer" id="contact"><div class="wrap">
-  <p class="cta">Let's build <em>something</em> together.</p>
+  <p class="cta">Get in touch</p>
   <a class="mail" href="mailto:kwm26@duke.edu">kwm26@duke.edu</a>
   <div class="foot-cols">
     <div><h4>Work</h4><a href="front-end.html">Product Design (ATP)</a><a href="production.html">Production &amp; Project Management</a><a href="game-dev/index.html">Game Development</a><a href="game-dev/audio.html">Audio Design</a></div>
     <div><h4>About</h4><a href="about.html">About me</a><a href="assets/Kyle_McCutchen_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></div>
     <div><h4>Elsewhere</h4><a href="https://www.linkedin.com/in/kyle-mccutchen/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/kwm26" target="_blank" rel="noopener">GitHub</a><a href="https://kylemccw.itch.io/" target="_blank" rel="noopener">itch.io</a></div>
   </div>
-  <div class="foot-base"><span>Crafted with care in Durham, NC.</span><span>&copy; 2026 Kyle McCutchen</span></div>
+  <div class="foot-base"><span>Durham, NC</span><span>&copy; 2026 Kyle McCutchen</span></div>
 </div></footer>
 
 <script src="js/site.js?v=6"></script>

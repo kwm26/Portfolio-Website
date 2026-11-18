@@ -130,13 +130,10 @@
 
   /* ---------- command menu (Ctrl/⌘ + K) ---------- */
   var items = [
-    { g: 'Work', t: 'Product Design (ATP)', s: 'Case study', u: 'front-end.html' },
-    { g: 'Work', t: 'Real-time motion overlays', s: 'ATP', u: 'front-end.html#realtime' },
-    { g: 'Work', t: 'Production & Project Management', s: 'Case study', u: 'production.html' },
-    { g: 'Work', t: 'ATP Board', s: 'Internal tool', u: 'production.html#board' },
-    { g: 'Work', t: 'AI video blur tool', s: 'Video tooling', u: 'production.html#blur' },
-    { g: 'Work', t: 'Game Development', s: 'Unreal & Unity', u: 'game-dev/index.html' },
+    { g: 'Work', t: 'Product Design', s: 'Athletic Training Portal', u: 'front-end.html' },
     { g: 'Work', t: 'Audio Design', s: 'Ableton · Wwise · Unreal', u: 'game-dev/audio.html' },
+    { g: 'Work', t: 'Game Development', s: 'Unreal & Unity', u: 'game-dev/index.html' },
+    { g: 'Work', t: 'Production', s: 'Cosmic Labs & ATP', u: 'production.html' },
     { g: 'Pages', t: 'Home', s: '', u: 'index.html' },
     { g: 'Pages', t: 'About', s: '', u: 'about.html' },
     { g: 'Contact', t: 'Copy email address', s: 'kwm26@duke.edu', a: copyEmail },
@@ -191,7 +188,7 @@
 
   /* ---------- scroll reveal ---------- */
   if ('IntersectionObserver' in window && !reduce) {
-    var groups = ['.section-head', '.bento .card', '.statement .wrap', '.steps .step', '.cs-facts .facts > div',
+    var groups = ['.section-head', '.bento .card', '.statement .wrap', '.cs-facts .facts > div',
                   '.cs-section', '.decision', '.about-block', '.next-card'];
     var els = [];
     groups.forEach(function (selr) {
